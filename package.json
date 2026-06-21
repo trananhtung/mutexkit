@@ -1,0 +1,65 @@
+{
+  "name": "mutexkit",
+  "version": "0.1.0",
+  "description": "Fair async Mutex and counting Semaphore with weighted permits, runExclusive, and AbortSignal support. Zero dependencies.",
+  "keywords": [
+    "mutex",
+    "semaphore",
+    "lock",
+    "async",
+    "concurrency",
+    "critical-section",
+    "runexclusive",
+    "abortsignal",
+    "promise",
+    "synchronization",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "author": "Tung Tran (https://github.com/trananhtung)",
+  "homepage": "https://github.com/trananhtung/mutexkit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trananhtung/mutexkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trananhtung/mutexkit/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
