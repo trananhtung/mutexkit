@@ -1,6 +1,6 @@
 {
   "name": "mutexkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fair async Mutex and counting Semaphore with weighted permits, runExclusive, and AbortSignal support. Zero dependencies.",
   "keywords": [
     "mutex",
